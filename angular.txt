@@ -1,2 +1,8 @@
 1.npm install -g @angular/cli@8.3.26
   npm uninstall -g  @angular/cli
+
+
+2.npm cache clean
+
+
+3.npm 换源
