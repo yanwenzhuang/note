@@ -1,0 +1,8 @@
+1.求半年内的时间
+this.endDate = new Date();
+let curDate = this.endDate.getTime();
+let halfYear = (365 / 2) * 24 * 3600 * 1000;
+this.startDate = new Date(curDate - halfYear);
+
+2.（1）字符串包含数字，大写字母，小写字母，特殊字符
+  /(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])/
