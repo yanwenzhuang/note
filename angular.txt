@@ -6,3 +6,5 @@
 3.npm 换源
 
 4.Angular   radio事件  [(ngModel)]="monOrGrand" (change)="selectMonthlyOrGrand()"
+
+5.按钮禁用   <button [disabled]="!grandLuckDraw"> test </button>
