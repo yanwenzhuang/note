@@ -8,3 +8,31 @@
 4.Angular   radio事件  [(ngModel)]="monOrGrand" (change)="selectMonthlyOrGrand()"
 
 5.按钮禁用   <button [disabled]="!grandLuckDraw"> test </button>
+
+6.超过两个小时，系统自动退出登录
+  lastTime = 0;
+  currentTime = 0;
+  timeOut = 2 * 60 * 60 * 1000; //两个小时
+  timer: any;
+  
+   ngOnInit(): void {
+    this.listenMouseboard();
+   }
+   
+   private listenMouseboard() {
+    this.timer = setInterval(() => {
+      this.currentTime = new Date().getTime();
+
+      this.mouseSubscription && this.mouseSubscription.unsubscribe();
+      this.mouseSubscription = fromEvent(window, 'mouseover').subscribe((event: any) => {
+        this.lastTime = new Date().getTime();
+      });
+
+      if (this.lastTime !== 0 && this.currentTime - this.lastTime > this.timeOut) {
+        this.loginService.logout();
+        this.router.navigate(['']);
+      }
+    }, 1000);
+  }
+   
+  
