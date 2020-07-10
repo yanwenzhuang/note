@@ -10,3 +10,5 @@ this.startDate = new Date(curDate - halfYear);
   /[1-9]\d{3}(.{0,1}\d{2}){0,1}/
   （3）字符串只能包含6位数字
   /^\d{6}$/
+   (4)字符串包含月份
+   /([J|j]an|[F|f]eb|[M|m]ar|[A|a]pr|[J|j]un|[J|j]ul|[A|a]ug|[S|s]ept|[O|o]ct|[N|n]ov|[D|d]ec)/
