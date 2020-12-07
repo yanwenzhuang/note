@@ -1,0 +1,12 @@
+1. <checkbox class="checkbox"></checkbox>
+.wx-checkbox-input.wx-checkbox-input-checked::before {
+  color: #fff;
+}
+
+.wx-checkbox-input.wx-checkbox-input-checked {
+  border: none;
+}
+
+.wx-checkbox-input.wx-checkbox-input-checked {
+ background-color: pink;
+}
