@@ -1,4 +1,4 @@
-加载框：
+1.加载框：
 <div class="loading">
   <div class="loading-backdrop"></div>
   <div class="loading-three-bounce">
@@ -60,3 +60,8 @@
     transform: scale(1.0);
   }
 }
+
+2.  不换行，...
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
