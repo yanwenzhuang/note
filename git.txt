@@ -1,0 +1,8 @@
+1. 使用git stash
+   使用 git stash , 将当前修改(未提交的代码)存入缓存区，切换分支修改 bug ,回来再通过 git stash pop 取出来。
+   git stash //将修改存储到暂存区，工作区会删除这些修改
+   git checkout <bug_branch>
+   git stash show //查看刚才暂存的修改
+   
+2. 撤销了上一个commit
+   git reset --soft HEAD^  
