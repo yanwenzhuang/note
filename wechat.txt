@@ -10,3 +10,11 @@
 .wx-checkbox-input.wx-checkbox-input-checked {
  background-color: pink;
 }
+
+2. 开关switch样式
+<view class="container">
+   <switch type="switch" color="{{}}" bindchange="" checked="{{false}}"></switch>
+</view>
+.container .wx-switch-input::before{
+  background-color: #D8D8D8 !important;
+}
