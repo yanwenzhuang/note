@@ -12,3 +12,15 @@ this.startDate = new Date(curDate - halfYear);
   /^\d{6}$/
    (4)字符串包含月份
    /([J|j]an|[F|f]eb|[M|m]ar|[A|a]pr|[J|j]un|[J|j]ul|[A|a]ug|[S|s]ept|[O|o]ct|[N|n]ov|[D|d]ec)/
+
+3.大数据格式化
+  function dataFormat(data) {
+  if (data >= 1000000) {
+    data = parseInt(data / 1000);
+    data = points.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+    data += 'K';
+  } else {
+    data = data.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+  }
+  return data;
+}
