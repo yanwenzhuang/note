@@ -18,3 +18,7 @@
 .container .wx-switch-input::before{
   background-color: #D8D8D8 !important;
 }
+
+3.navigationBar高度和px 转化为rpx
+let menuData = wx.getMenuButtonBoundingClientRect();
+rpx = px * 750 / wx.getSystemInfoSync().windowWidth;
