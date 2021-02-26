@@ -65,3 +65,24 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    
+3. 圆形加载框
+.ring {
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 50%;
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.2);
+  border-top: 2rpx solid rgba(255, 255, 255, 0.2);
+  border-right: 2rpx solid rgba(255, 255, 255, 0.2);
+  border-left: 4rpx solid #fff;
+  z-index: 3;
+  animation: spin infinite;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+
+.ring-success{
+  border-bottom: 4rpx solid #fff;
+  border-top: 4rpx solid #fff;
+  border-right: 4rpx solid #fff;
+}
